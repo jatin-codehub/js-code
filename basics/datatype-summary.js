@@ -26,8 +26,7 @@ console.log(id == id2); // => false
 
 const actor=["khan","kumar"];
 let myobj ={
-    name :"jatin"
-    age:20
+    nam :"jatin" 
 
 }
 
@@ -36,3 +35,30 @@ const myfunction = function(){
     
 }
 // typeof function => in real is function-object
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (primitive) , Heap(non-primitive)
+
+let myname = "jatin"
+
+let another = myname
+another = "kumar"
+
+console.log(myname);
+console.log(another);
+
+let userone = {
+    email : "my@gmail.com" ,
+    upi :"my@id"
+    
+}
+let usertwo = userone
+
+usertwo.email = "jatin@gmail.com"
+
+console.log(userone.email);
+console.log(usertwo.email);
+// both give same output bcz stack take reference from heap when we store something in heap
+// so value of both is change
+//but stack give copy of privious once 
